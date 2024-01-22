@@ -37,30 +37,39 @@ internal static class SeedData
                 BasePrice = 12.75m,
                 ImageUrl = "img/pizzas/meaty.jpg",
             },
+            // new()
+            // {
+            //     Id = 5,
+            //     Name = "Mushroom Lovers",
+            //     Description = "It has mushrooms. Isn't that obvious?",
+            //     BasePrice = 11.00m,
+            //     ImageUrl = "img/pizzas/mushroom.jpg",
+            // },
+            // new()
+            // {
+            //     Id = 7,
+            //     Name = "Veggie Delight",
+            //     Description = "It's like salad, but on a pizza",
+            //     BasePrice = 11.50m,
+            //     ImageUrl = "img/pizzas/salad.jpg",
+            // },
+            // new()
+            // {
+            //     Id = 8,
+            //     Name = "Margherita",
+            //     Description = "Traditional Italian pizza with tomatoes and basil",
+            //     BasePrice = 9.99m,
+            //     ImageUrl = "img/pizzas/margherita.jpg",
+            // },
             new()
             {
-                Id = 5,
-                Name = "Mushroom Lovers",
-                Description = "It has mushrooms. Isn't that obvious?",
-                BasePrice = 11.00m,
-                ImageUrl = "img/pizzas/mushroom.jpg",
-            },
-            new()
-            {
-                Id = 7,
-                Name = "Veggie Delight",
-                Description = "It's like salad, but on a pizza",
-                BasePrice = 11.50m,
-                ImageUrl = "img/pizzas/salad.jpg",
-            },
-            new()
-            {
-                Id = 8,
-                Name = "Margherita",
-                Description = "Traditional Italian pizza with tomatoes and basil",
-                BasePrice = 9.99m,
+                Id = 9,
+                Name = "Margherita Family Size",
+                Description = "24\" of pure tomatoes and basil",
+                BasePrice = 14.99m,
                 ImageUrl = "img/pizzas/margherita.jpg",
-            },
+                FixedSize = 24
+            }
         ];
         db.Specials.AddRange(specials);
         return db.SaveChangesAsync();
